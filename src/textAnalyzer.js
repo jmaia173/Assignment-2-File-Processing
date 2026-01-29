@@ -7,13 +7,13 @@ function countWords(text) {
   return words.filter(word => word.length > 0).length;
 }
 
-// 2. Find longest word  ✅ FIXED
+// 2. Find longest word 
 function findLongestWord(text) {
   const words = text.split(/\s+/);
   let longest = '';
 
   for (let word of words) {
-    // remove punctuation/symbols from each word
+
     const cleanWord = word.replace(/[^a-zA-Z]/g, '');
 
     if (cleanWord.length > longest.length) {
@@ -30,9 +30,6 @@ function countLines(text) {
 }
 
 
-// ------------------
-// ONLY RUN DEMO WHEN FILE IS RUN DIRECTLY ✅ FIXED
-// ------------------
 if (require.main === module) {
   const quotesText = fs.readFileSync('data/quotes.txt', 'utf-8');
   const sampleText = fs.readFileSync('data/sample-text.txt', 'utf-8');

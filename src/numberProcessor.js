@@ -31,7 +31,7 @@ function calculateAverage(numbers) {
 }
 
 
-// TEST THE FUNCTIONS
+// test
 
 if (require.main === module) {
   const numbersText = fs.readFileSync('data/sample-numbers.txt', 'utf-8');

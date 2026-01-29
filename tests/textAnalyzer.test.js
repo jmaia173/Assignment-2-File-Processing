@@ -6,9 +6,9 @@ const {
 
 describe('Text Analyzer Functions', () => {
 
-  // -----------------------
+
   // countWords
-  // -----------------------
+ 
   test('counts total number of words correctly', () => {
     const text = 'Hello world this is a test';
     expect(countWords(text)).toBe(6);
@@ -19,9 +19,9 @@ describe('Text Analyzer Functions', () => {
   });
 
 
-  // -----------------------
+
   // findLongestWord
-  // -----------------------
+
   test('finds the longest word', () => {
     const text = 'The elephant is big';
     expect(findLongestWord(text)).toBe('elephant');
@@ -33,9 +33,9 @@ describe('Text Analyzer Functions', () => {
   });
 
 
-  // -----------------------
+
   // countLines
-  // -----------------------
+
   test('counts lines correctly', () => {
     const text = 'Line one\nLine two\nLine three';
     expect(countLines(text)).toBe(3);
